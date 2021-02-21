@@ -76,6 +76,14 @@ function upperCaseF(a){
       a.value = a.value.toUpperCase();
   }, 1);
 }
+//Images change on button click
+// var img = document.getElementById("device-img");
+// function forward(){
+//     img.src = './images/fan-forward.gif';
+// }
+
+
+
 
 
 // jquery.repeater version 1.2.1
@@ -1113,7 +1121,7 @@ function upperCaseF(a){
         $('#cat-id').val(window.id);
               },
               hide: function (deleteElement) {
-                  if(confirm('Are you sure you want to delete this element?')) {
+                  if(confirm('Are you sure you want to delete this pattern?')) {
                     window.id--;
                       $('#cat-id').val(window.id);
                     $(this).slideUp(deleteElement);

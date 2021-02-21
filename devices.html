@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -71,7 +72,7 @@
               <div class="card-header p-0 fan-background">
                 <div class="device-container">
                   <div class="device-item1">
-                    <img class="device-fan" src="./images/fan.png" alt="">
+                    <img id="device-img1" class="device-fan" src="./images/fan-stop.gif" alt="">
                   </div>
                   <div class="device-item2">
                     <div class="device-status">
@@ -98,13 +99,13 @@
                   <div class="flex-container">
                     <div class="flex-btn action-top">
                         
-                          <button class="btn btn-info custom">Forward</button>
+                          <button onclick="document.getElementById('device-img1').src='./images/fan-forward.gif'"  class="btn btn-info custom">Forward</button>
                        
                         
-                          <button class="btn btn-info custom">Reverse</button>
+                          <button onclick="document.getElementById('device-img1').src='./images/fan-reverse.gif'" class="btn btn-info custom">Reverse</button>
                         
                        
-                          <button class="btn btn-info custom">Stop</button>
+                          <button onclick="document.getElementById('device-img1').src='./images/fan-stop.gif'"  class="btn btn-info custom">Stop</button>
                        
                       </div>
                     </div>
@@ -121,7 +122,7 @@
               <div class="card-header p-0 fan-background">
                 <div class="device-container">
                   <div class="device-item1">
-                    <img class="device-fan" src="./images/fan.png" alt="">
+                    <img id="device-img2" class="device-fan" src="./images/fan-stop.gif" alt="">
                   </div>
                   <div class="device-item2">
                     <div class="device-status">
@@ -148,13 +149,13 @@
                 <div class="flex-container">
                   <div class="flex-btn action-top">
                       
-                        <button class="btn btn-info custom">Forward</button>
+                        <button onclick="document.getElementById('device-img2').src='./images/fan-forward.gif'" class="btn btn-info custom">Forward</button>
                      
                       
-                        <button class="btn btn-info custom">Reverse</button>
+                        <button onclick="document.getElementById('device-img2').src='./images/fan-reverse.gif'"  class="btn btn-info custom">Reverse</button>
                       
                      
-                        <button class="btn btn-info custom">Stop</button>
+                        <button onclick="document.getElementById('device-img2').src='./images/fan-stop.gif'"  class="btn btn-info custom">Stop</button>
                      
                     </div>
                   </div>
@@ -171,7 +172,7 @@
               <div class="card-header p-0 fan-background">
                 <div class="device-container">
                   <div class="device-item1">
-                    <img class="device-fan" src="./images/fan.png" alt="">
+                    <img id="device-img3" class="device-fan" src="./images/fan-stop.gif" alt="">
                   </div>
                   <div class="device-item2">
                     <div class="device-status">
@@ -198,13 +199,13 @@
                 <div class="flex-container">
                   <div class="flex-btn action-top">
                       
-                        <button class="btn btn-info custom">Forward</button>
+                        <button onclick="document.getElementById('device-img3').src='./images/fan-forward.gif'"  class="btn btn-info custom">Forward</button>
                      
                       
-                        <button class="btn btn-info custom">Reverse</button>
+                        <button onclick="document.getElementById('device-img3').src='./images/fan-reverse.gif'"  class="btn btn-info custom">Reverse</button>
                       
                      
-                        <button class="btn btn-info custom">Stop</button>
+                        <button onclick="document.getElementById('device-img3').src='./images/fan-stop.gif'"  class="btn btn-info custom">Stop</button>
                      
                     </div>
                   </div>

@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -68,22 +69,27 @@
           <div class="flex-container"><!--id="device"-->
             <div class="flex-item1">
               <div class="card pattern-style">
-                <div class="card-header p-0 fan-background">
+                <div class="card-header fan-background">
                   <div class="device-container">
                     
-                      <img  class="pattern-fan" src="./images/fan.png" alt="">
+                      <img  class="pattern-fan" src="./images/fan-stop.gif" alt="">
                    
                     </div>
                   </div>
                 
-                <div class="card-body pt-3 pb-3">
+                <div class="card-body card-padding">
                   <form action="devices.html" method="post" class="repeater" novalidate="novalidate">
                     <div class="row">
                       <div class="col-lg-12">
+                        <div class="form-group schedule">
+                          <label for="exampleInputEmail1">Schedule date & time</label>
+                         <input class="form-control custom-control"  id="schedule-date-time" type="datetime-local"/>
+                        </div>
                         <!-- <label for="exampleInputEmail1">Device pattern</label> -->
                         <div data-repeater-list="category-group">
-                        <div data-repeater-item>
-                        <div class="ptrn-group">  <!--name="cat-title"-->          
+                        <div id="hide-del" class="pattern-container" data-repeater-item>
+                        <div class="item-1">
+                          <div class="ptrn-group">  <!--name="cat-title"-->          
                           <div class="ptrn-list">
                               <input onkeydown="upperCaseF(this)" class="form-control search-slt active" placeholder="Forward" id="exampleFormControlSelect1">
                           </div>
@@ -94,16 +100,22 @@
                                <input onkeydown="upperCaseF(this)" class="form-control search-slt" placeholder="Idle" id="exampleFormControlSelect1">
                           </div>
                       </div>
-                      <input class="btn btn-info" style="position: relative;
-                      left: 15px;" data-repeater-delete type="button" value="Delete"/>
                     </div>
-                  </div>
-                  <input class="btn btn-info float-right" style="position: relative;top: -34px;
-                  right: 10px;" data-repeater-create type="button" value="Add"/>
-                      <div class="form-group schedule">
+                      <!-- <div class="form-group schedule">
                         <label for="exampleInputEmail1">Schedule date & time</label>
                        <input class="form-control custom-control"  id="schedule-date-time" type="datetime-local"/>
-                      </div>
+                      </div> -->
+                      <div class="item-2">
+                      <a class="del-btn repeater-icons" data-repeater-delete><i class="fa fa-minus-square"></i></a>
+                    </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="add-btn">
+                  <a class="repeater-icons float-right" data-repeater-create type="button"><i class="fa fa-plus-square"></i></a>
+                </div>  
                     
                       <div class="card-submit">
                         <button class="btn btn-info">Execute</button>
