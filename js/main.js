@@ -76,13 +76,15 @@ function upperCaseF(a){
       a.value = a.value.toUpperCase();
   }, 1);
 }
-//Images change on button click
-// var img = document.getElementById("device-img");
-// function forward(){
-//     img.src = './images/fan-forward.gif';
-// }
+// function scrollWin() {
+//     window.scrollBy(0, 900);
+//   }
 
-
+$(document).ready(function(){
+    $( ".scroll-bottom" ).click(function() {
+  $('html,body').animate({scrollTop:$(document).height()}, 1000)
+    });
+});
 
 
 

@@ -1,7 +1,6 @@
 :root{
   --header-height: 3rem;
   --nav-width: 68px;
-
   /*===== Colors =====*/
   --first-color:  purple; /*#4723D9;*/
   --first-color-light: #c502a4;
@@ -18,6 +17,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   outline: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 .btn:focus{
   outline:0;
@@ -687,13 +689,6 @@ label{
 }
 
 #custom-search-input button {
-  /* border-left: 0px solid #dadbdc;
-  border-right: 1px solid #dadbdc;
-  border-top: 1px solid #dadbdc;
-  border-bottom: 1px solid #dadbdc; */
-  /* border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; */
-  /* border:0; */
   background: var(--color-gray);
   /* padding: 13px 13px; */
   position: relative;
@@ -711,7 +706,7 @@ label{
 #custom-search-input button:active {
   border:0;
   background: var(--first-color-violet);
-  padding: 13px 13px;
+  padding: 7px 13px;
   position: relative;
   /* left: -28px; */
   margin-bottom: 0;
@@ -788,6 +783,8 @@ input:focus::placeholder {
 }
 #device{
   padding-top: 5vh;
+  justify-content: space-around;
+  padding: 20px
 }
 
 .flex-container {
@@ -811,7 +808,7 @@ input:focus::placeholder {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding: 5px;
+  /* padding: 5px; */
   flex-flow: nowrap;  
 }
 .device-item{
@@ -820,13 +817,13 @@ input:focus::placeholder {
   padding: 10px;
 }
 .device-item1{
-  width: 40%;
+  width: 45%;
   height: auto;
 }
 .device-item2{
   width: 60%;
   height: auto;
-  padding-left: 10px;
+  padding: 5px;
   /* animation: 1s ease-out 0s 1 slideInFromTop; */
 }
 .device-status{
@@ -835,12 +832,12 @@ input:focus::placeholder {
   flex-wrap: nowrap;
 }
 .flex-item {
-  width: 310px;
+  width: 320px;
   height: auto;
-  padding: 10px;
+  padding: 5px;
 }
 .flex-item1 {
-  width: 420px;
+  width: 372px; /*390px; 418px*/
   height: auto;
   padding: 10px;
 }
@@ -862,27 +859,31 @@ input:focus::placeholder {
   color: var(--dark-blue); /*#252323 #001f8e #01305d #021b33*/
 }
 .pattern-fan{
-  width:100%; 
-  height:auto;
-  border-radius: 5px;
+  /*width:350px; 100%
+  height: auto; 240px;*/
+  border-radius: 0px;
+  width: 350px;
+    height: 225px;
 }
 .device-fan{
- /* width:100%;
-   height:auto;
-    -webkit-transition: -webkit-transform 1s; */
-   width: 110px;
-    height: 115px;
+   width: 120px;
+    height: 120px;
 }
 /* .device-fan:hover{
   -webkit-transform: rotate(360deg) translateZ(0);
 } */
 .card-submit{
-padding-top:5px;
+padding-top:25px;
 padding-bottom: 10px;
 display: flex;
 justify-content: space-around;
-margin-top: 25px;
+/* margin-top: 25px; */
 }
+.view-pattern{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  }
 .search-slt:after{
   width: 1.8561553006em;
   height: 1.8561553006em;
@@ -976,6 +977,7 @@ button a.link:active {
   border: 1px solid var(--first-color-violet);
   border-radius: 2rem;
   padding: 2rem .75rem;
+  box-shadow: none;
 }
 .custom-control:focus{
 border: 1px solid var(--first-color-violet);
@@ -998,22 +1000,17 @@ border: 1px solid var(--first-color-violet);
   }
 }
 .schedule{
-  padding-top:10px;
+  /* padding-top:10px; */
   margin:10px;
-  width: 330px
+  width: 285px;/*305px 330px*/
 }
 .add-btn{
   position: relative;
-  /* top: -34px;
-  right: 10px;
-  float:right */
   position: relative;
-  right: 10px;
+  right: 8px;
   top: 0px;
 }
 .del-btn{
-  /* position: relative;
-  left: 15px; */
   position: relative;
     right: 0px;
     top: 20px;
@@ -1042,4 +1039,8 @@ a.del-btn.repeater-icons i{
 }
 a.repeater-icons.float-right i{
   color: var(--first-color-violet);
+}
+.inner-pattern{
+  overflow-y: auto;
+  max-height: 130px;
 }
