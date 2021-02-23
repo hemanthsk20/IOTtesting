@@ -18,9 +18,9 @@
   font-family: 'Poppins', sans-serif;
   outline: none;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 .btn:focus{
   outline:0;
 }
